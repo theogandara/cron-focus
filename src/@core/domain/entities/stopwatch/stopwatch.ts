@@ -21,6 +21,10 @@ export class Stopwatch {
     this.createdAt = props.createdAt;
   }
 
+  startStopwatch (startDate: Date): void {
+    this.start = startDate;
+  }
+
   static create (props: StopwatchProps): Stopwatch {
     return new Stopwatch(props);
   }
