@@ -5,10 +5,6 @@ interface StopwatchProps {
   createdAt: Date
   start: Date | null
   finish: Date | null
-  paused: Date | null
-  time: number
-  isRunning: boolean
-  isFinished: boolean
 }
 
 export class Stopwatch {
@@ -17,10 +13,6 @@ export class Stopwatch {
   public description: string;
   public start: Date | null;
   public finish: Date | null;
-  public paused: Date | null;
-  public time: number;
-  public isRunning: boolean;
-  public isFinished: boolean;
   public readonly createdAt: Date;
 
   constructor (public props: StopwatchProps) {
@@ -29,10 +21,6 @@ export class Stopwatch {
     this.description = props.description;
     this.start = props.start;
     this.finish = props.finish;
-    this.paused = props.paused;
-    this.time = props.time;
-    this.isRunning = props.isRunning;
-    this.isFinished = props.isFinished;
     this.createdAt = props.createdAt;
   }
 
@@ -47,10 +35,6 @@ export class Stopwatch {
       description: this.description,
       start: this.start,
       finish: this.finish,
-      paused: this.paused,
-      time: this.time,
-      isRunning: this.isRunning,
-      isFinished: this.isFinished,
       createdAt: this.createdAt
     };
   }
