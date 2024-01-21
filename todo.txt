@@ -1,8 +1,10 @@
-- Criar um cronometro com horario de inicio, termino, nome e descrição.
-- Iniciar o Stopwatch.
+- Criar Cron
+- Iniciar Cron
+- Inserir Nome e Descrição ao Cron
 - Criar um usuário com email e nome.
 
 Features:
  1 Login
  2 Criar Stopwatch
- 3 Listar Stopwatch
+ 3 Iniciar Stopwatch
+ 4 Listar Stopwatch

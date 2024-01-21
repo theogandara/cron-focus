@@ -25,10 +25,6 @@ export class Stopwatch {
     this.start = startDate;
   }
 
-  static create (props: StopwatchProps): Stopwatch {
-    return new Stopwatch(props);
-  }
-
   toJSON (): StopwatchProps {
     return {
       id: this.id,
